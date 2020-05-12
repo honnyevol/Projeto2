@@ -260,132 +260,153 @@
             display: none;
         }
 
-    footer {
-      width: 100%;
-      background: #510A09;
-      color: white;
+        footer {
+            width: 100%;
+            background: #510A09;
+            color: white;
 
-    }
+        }
 
-    .container-footer-all {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px;
-    }
+        .container-footer-all {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px;
+        }
 
-    .container-footer {
-      width: 100%;
-      background:#510A09;
-    }
+        .container-footer {
+            width: 100%;
+            background: #510A09;
+        }
 
-    .footer {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-    }
+        .footer {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
 
-    .copyright {
-      color: #C7C7C7;
-    }
+        .copyright {
+            color: #C7C7C7;
+        }
 
-    .copyright a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
+        .copyright a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
 
-    .information a {
-      text-decoration: none;
-      color: #C7C7C7;
-    }
+        .information a {
+            text-decoration: none;
+            color: #C7C7C7;
+        }
 
-    .pics img {
-      max-width: 400px;
-      max-height: 40vh;
-    }
-    .ro {
-      margin-top: 20px;
-      display: flex;
-    }
+        .pics img {
+            max-width: 400px;
+            max-height: 40vh;
+        }
 
-    .ro img {
-      width: 36px;
-      height: 36px;
-    }
+        .ro {
+            margin-top: 20px;
+            display: flex;
+        }
 
-    .ro label {
-      margin-top: 10px;
-      margin-left: 20px;
-      color: #C7C7C7;
-    }
-    .row2 {
-      margin-top: 20px;
-      display: flex;
-    }
+        .ro img {
+            width: 36px;
+            height: 36px;
+        }
 
-    .row2 img {
-      width: 36px;
-      height: 36px;
-    }
+        .ro label {
+            margin-top: 10px;
+            margin-left: 20px;
+            color: #C7C7C7;
+        }
 
-    .row2 label {
-      margin-top: 10px;
-      margin-left: 20px;
-      max-width: 140px;
-    }
-    .colum3 {
-      max-width: 400px;
-    }
+        .row2 {
+            margin-top: 20px;
+            display: flex;
+        }
 
-    .colum3 h1 {
-      font-size: 22px;
-    }
-    .container-body {
-      display: flex;
-      justify-content: space-between;
-    }
+        .row2 img {
+            width: 36px;
+            height: 36px;
+        }
 
-    .colum1 {
-      max-width: 400px;
-    }
+        .row2 label {
+            margin-top: 10px;
+            margin-left: 20px;
+            max-width: 140px;
+        }
 
-    .colum1 h1 {
-      font-size: 22px;
-    }
+        .colum3 {
+            max-width: 400px;
+        }
 
-    .colum1 p {
-      font-size: 14px;
-      color: #C7C7C7;
-      margin-top: 20px;
-    }
+        .colum3 h1 {
+            font-size: 22px;
+        }
 
-    .colum2 {
-      max-width: 400px;
+        .container-body {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    }
+        .colum1 {
+            max-width: 400px;
+        }
 
-    .colum2 h1 {
-      font-size: 22px;
-    }
-    @media screen and (max-width: 1100px) {
-       
-     .container-body {
-       flex-wrap: wrap;
-     }
-     .colum1{
-     text-align: center;
-     }
-     .colum2,
-     .colum3 {
-     margin-top: 40px;
-     margin-left: auto;
-     margin-right: auto;
-     }
-     
-    }
+        .colum1 h1 {
+            font-size: 22px;
+        }
+
+        .colum1 p {
+            font-size: 14px;
+            color: #C7C7C7;
+            margin-top: 20px;
+        }
+
+        .colum2 {
+            max-width: 400px;
+
+        }
+
+        .colum2 h1 {
+            font-size: 22px;
+        }
+        @media screen and (max-width: 1100px){
+            .carousel-indicators{
+                display: none;
+            }
+            .carousel-control-prev{
+                display:none;
+            }
+            .carousel-control-next{
+                display:none;
+            }
+            #ju{
+                margin-top:-600px;
+            }
+        }
+        @media screen and (max-width: 1100px) {
+
+            .container-body {
+                flex-wrap: wrap;
+            }
+
+            .colum1 {
+                text-align: center;
+            }
+
+            .colum2,
+            .colum3 {
+                margin-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+        
     </style>
 </head>
 
@@ -455,23 +476,20 @@
         <div class="carousel-inner" id="all">
             <div class="carousel-item active">
                 <img src="amazon/preguiça.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
+                
             </div>
             <div class="carousel-item" id="all">
                 <img src="amazon/azul.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h5 class="ali">Second slide label</h5>
+                    <p class="ali">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item" id="all">
                 <img src="amazon/crab.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h5 class="ali">Third slide label</h5>
+                    <p class="ali">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
             </div>
         </div>
@@ -485,7 +503,7 @@
         </a>
     </div>
 
-    <div class="jumbotron" style="width: 90%;margin: auto;background-color: #9F800D;">
+    <div class="jumbotron" id="ju" style="width: 90%;margin-left: 5%;margin-right: 5%;background-color: #9F800D;">
         <h1 class="display-4">Hello, world!</h1>
         <p>This is a simple hero unit, a simple
             jumbotron-style component for calling extra attention to featured content or information.This is a simple
@@ -624,81 +642,82 @@
     <footer>
 
         <div class="container-footer-all">
-    
-          <div class="container-body">
-    
-            <div class="colum1">
-              <h1>About me</h1>
-    
-              <p>I am a nice guy 35 old from brazil and with four years study the programation field , you find me easily on facebook as honny batista de oliveira</p>
-    
+
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>About me</h1>
+
+                    <p>I am a nice guy 35 old from brazil and with four years study the programation field , you find me
+                        easily on facebook as honny batista de oliveira</p>
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Social Media</h1>
+
+                    <div class="ro">
+                        <img src="001-facebook.png">
+                        <label>call me on Facebook</label>
+                    </div>
+
+                    <div class="ro">
+                        <img src="011-instagram.png">
+                        <label>Call me on Instagram</label>
+                    </div>
+
+                    <div class="ro">
+                        <img src="003-whatsapp.png">
+                        <label>whatsapp-55-62-991318416</label>
+                    </div>
+
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Contact Information</h1>
+
+                    <div class="row2">
+                        <img src="icon/house.png">
+                        <label>Country Brazil, State Goiás, City Aparecida de Goiânia </label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/smartphone.png">
+                        <label>whatsapp-55-62-991318416</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/contact.png">
+                        <label>honnyevol@gmail.com</label>
+                    </div>
+
+                </div>
+
             </div>
-    
-            <div class="colum2">
-    
-              <h1>Social Media</h1>
-    
-              <div class="ro">
-                <img src="001-facebook.png">
-                <label>call me on Facebook</label>
-              </div>
-              
-              <div class="ro">
-                <img src="011-instagram.png">
-                <label>Call me on Instagram</label>
-              </div>
-              
-              <div class="ro">
-                <img src="003-whatsapp.png">
-                <label>whatsapp-55-62-991318416</label>
-              </div>
-    
-    
-            </div>
-    
-            <div class="colum3">
-    
-              <h1>Contact Information</h1>
-    
-              <div class="row2">
-                <img src="icon/house.png">
-                <label>Country Brazil, State Goiás, City Aparecida de Goiânia </label>
-              </div>
-    
-              <div class="row2">
-                <img src="icon/smartphone.png">
-                <label>whatsapp-55-62-991318416</label>
-              </div>
-    
-              <div class="row2">
-                <img src="icon/contact.png">
-                <label>honnyevol@gmail.com</label>
-              </div>
-    
-            </div>
-    
-          </div>
 
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+                integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+                integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
 
 
-    <script src="app.js"></script>
+            <script src="app.js"></script>
 </body>
 
 </html>
