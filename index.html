@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #394A13;
+            background-color: #510A09;
         }
 
         .slider {
@@ -181,13 +181,13 @@
 
 
         .parallax {
-            background-image: url(amazon/rio.jpg);
+            background-image: url(onca-pintada.jpg);
             background-attachment: fixed;
             width: 90%;
             margin-left: 5%;
             margin-right: 5%;
-            height: 70vh;
-            object-fit: cover;
+            min-height: 600px;
+
 
         }
 
@@ -263,7 +263,7 @@
         footer {
             width: 100%;
             background: #510A09;
-            color: white;
+            color: #9F800D;
 
         }
 
@@ -288,18 +288,18 @@
         }
 
         .copyright {
-            color: #C7C7C7;
+            color: #9F800D;
         }
 
         .copyright a {
             text-decoration: none;
-            color: white;
+            color: #9F800D;
             font-weight: bold;
         }
 
         .information a {
             text-decoration: none;
-            color: #C7C7C7;
+            color: #9F800D;
         }
 
         .pics img {
@@ -315,12 +315,13 @@
         .ro img {
             width: 36px;
             height: 36px;
+            color: #9F800D;
         }
 
         .ro label {
             margin-top: 10px;
             margin-left: 20px;
-            color: #C7C7C7;
+            color: #9F800D;
         }
 
         .row2 {
@@ -331,6 +332,9 @@
         .row2 img {
             width: 36px;
             height: 36px;
+            color: #9F800D;
+
+
         }
 
         .row2 label {
@@ -341,10 +345,12 @@
 
         .colum3 {
             max-width: 400px;
+            color: #9F800D;
         }
 
         .colum3 h1 {
             font-size: 22px;
+            color: #9F800D;
         }
 
         .container-body {
@@ -354,50 +360,61 @@
 
         .colum1 {
             max-width: 400px;
+            color: #9F800D;
         }
 
         .colum1 h1 {
             font-size: 22px;
+            color: #9F800D;
         }
 
         .colum1 p {
             font-size: 14px;
-            color: #C7C7C7;
+            color: #9F800D;
             margin-top: 20px;
         }
 
         .colum2 {
             max-width: 400px;
+            color: #9F800D;
 
         }
 
         .colum2 h1 {
             font-size: 22px;
+            color: #9F800D;
         }
-        @media screen and (max-width: 1200px){
-            .carousel-indicators{
+
+        @media screen and (max-width: 1200px) {
+            .carousel-indicators {
                 display: none;
             }
-            .carousel-control-prev{
-                display:none;
+
+            .carousel-control-prev {
+                display: none;
             }
-            .carousel-control-next{
-                display:none;
+
+            .carousel-control-next {
+                display: none;
             }
-            #ju{
-                margin-top:-525px;
+
+            #ju {
+                margin-top: -525px;
             }
-            .ali{
-                display:none;
+
+            .ali {
+                display: none;
             }
-            .videos{
+
+            .videos {
                 justify-content: center;
             }
         }
+
         @media screen and (max-width: 1100px) {
 
             .container-body {
-                
+
                 display: flex;
                 flex-wrap: wrap;
                 margin-left: 30%;
@@ -406,7 +423,7 @@
 
             .colum1 {
                 text-align: center;
-                
+
             }
 
             .colum2,
@@ -417,7 +434,29 @@
             }
 
         }
-        
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "a a . ."
+                ". b b ."
+                ". . c c";
+        }
+
+        .a {
+            grid-area: a;
+        }
+
+        .b {
+            grid-area: b;
+        }
+
+        .c {
+            grid-area: c;
+        }
     </style>
 </head>
 
@@ -450,7 +489,8 @@
         </div>
     </div>
     <div class="slider"></div>
-    <div class="jumbotron" style="width: 90%;margin: auto;background-color: #510A09;">
+    <div class="jumbotron"
+        style="width: 90%;margin: auto;background-color: #510A09;font-family: sans-serif;color: #9F800D;">
         <h1 class="display-4">Hello, world!</h1>
         <p><img src="amazon/papagaio.jpg" class="pic_jumbo" alt="">This is a simple
             hero unit, a simple
@@ -462,21 +502,11 @@
             component for calling extra attention to featured content or information.This is a simple hero unit, a
             simple jumbotron-style component for calling extra attention to featured content or information.This is a
             simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
-            information.This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style
-            component for calling extra attention to featured content or information.This is a simple hero unit, a
-            simple jumbotron-style component for calling extra attention to featured content or information.This is a
-            simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
-            featured content or information.This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style
-            component for calling extra attention to featured content or information.This is a simple hero unit, a
-            simple jumbotron-style component for calling extra attention to featured content or information.This is a
-            simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
-            information.</p>
+        </p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+            style="background-color: #9F800D;color: #510A09;border: none;">Learn more</a>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="width:90%;margin:auto;">
         <ol class="carousel-indicators">
@@ -486,8 +516,8 @@
         </ol>
         <div class="carousel-inner" id="all">
             <div class="carousel-item active">
-                <img src="amazon/preguiça.jpg" class="d-block w-100" alt="...">
-                
+                <img src="amazon/tucano.jpg" class="d-block w-100" alt="...">
+
             </div>
             <div class="carousel-item" id="all">
                 <img src="amazon/azul.jpg" class="d-block w-100" alt="...">
@@ -514,7 +544,8 @@
         </a>
     </div>
 
-    <div class="jumbotron" id="ju" style="width: 90%;margin-left: 5%;margin-right: 5%;background-color: #9F800D;">
+    <div class="jumbotron"
+        style="width: 50%;margin-left: 5%;background-color: #9F800D;font-family: sans-serif;color: #510A09;margin-top: 25px;">
         <h1 class="display-4">Hello, world!</h1>
         <p>This is a simple hero unit, a simple
             jumbotron-style component for calling extra attention to featured content or information.This is a simple
@@ -524,27 +555,36 @@
             extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style
             component for calling extra attention to featured content or information.This is a simple hero unit, a
             simple jumbotron-style component for calling extra attention to featured content or information.This is a
-            simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
+        </p>
+
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+            style="background-color: #510A09;color:#9F800D ;border: none;">Learn more</a>
+    </div>
+    <div class="jumbotron"
+        style="width: 50%;margin-right: 5%;transform:translateX(80%) ;background-color: #9F800D;font-family: sans-serif;color: #510A09;">
+        <h1 class="display-4">Hello, world!</h1>
+        <p>This is a simple hero unit, a simple
+            jumbotron-style component for calling extra attention to featured content or information.This is a simple
+            hero unit, a simple jumbotron-style component for calling extra attention to featured content or
             information.This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
             featured content or information.This is a simple hero unit, a simple jumbotron-style component for calling
             extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style
             component for calling extra attention to featured content or information.This is a simple hero unit, a
             simple jumbotron-style component for calling extra attention to featured content or information.This is a
-            simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
-            featured content or information.This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style
-            component for calling extra attention to featured content or information.This is a simple hero unit, a
-            simple jumbotron-style component for calling extra attention to featured content or information.This is a
-            simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
-            information.</p>
+        </p>
+
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+            style="background-color: #510A09;color:#9F800D ;border: none;">Learn more</a>
     </div>
 
     <div class="parallax">.</div>
 
-    <div class="jumbotron" style="width: 90%;margin: auto;background-color: #510A09;">
+    <div class="jumbotron"
+        style="width: 90%;margin: auto;background-color: #510A09;font-family: sans-serif;color: #9F800D;">
         <h1 class="display-4">Hello, world!</h1>
         <p>This is a simple hero unit, a simple
             jumbotron-style component for calling extra attention to featured content or information.This is a simple
@@ -569,30 +609,32 @@
             information.</p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+            style="background-color: #9F800D;color: #510A09;border: none;">Learn more</a>
     </div>
     <div class="jumbotron jumbotron-fluid"
-        style="display: flex;Justify-content:center ;margin-left: 5%;margin-right: 5%;background-color: #9F800D;">
+        style="display: flex;Justify-content:center ;margin-left: 5%;margin-right: 5%;background-color: #9F800D;font-family: sans-serif;color: #510A09;">
         <div class="container">
             <h1 class="display-4" style="text-align: center;">KNOW ABOUT AMAZON</h1>
             <p class="lead" style="text-align: center;">This is a modified jumbotron that occupies the entire horizontal
                 space of its parent.</p>
         </div>
     </div>
+    <div class="grid-container" style="margin-left:9%;margin-right: 9%;">
+        <div class="a"><iframe width="607" height="350" src="https://www.youtube.com/embed/oela7cDoyzY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+        <div class="b"> <iframe width="607" height="350" src="https://www.youtube.com/embed/5IzzogrKo6k" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
 
-    <div class="videos" style="display: flex;flex-wrap: wrap;margin-left: 5%;margin-right: 5%;">
-
-        <iframe width="607" height="350" src="https://www.youtube.com/embed/oela7cDoyzY" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="607" height="350" src="https://www.youtube.com/embed/5IzzogrKo6k" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="607" height="350" src="https://www.youtube.com/embed/SAZAKPUQMw0" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="607" height="350" src="https://www.youtube.com/embed/IIO8rWUn2Uc" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="c"> <iframe width="607" height="350" src="https://www.youtube.com/embed/IIO8rWUn2Uc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
     </div>
+
     <div class="jumbotron jumbotron-fluid"
-        style="display: flex;Justify-content:center ;margin-left: 5%;margin-right: 5%;background-color: #510A09;">
+        style="display: flex;Justify-content:center ;margin-left: 5%;margin-right: 5%;background-color: #510A09;font-family: sans-serif;color: #9F800D;">
         <div class="container">
             <h1 class="display-4" style="text-align: center;">KNOW ABOUT AMAZON</h1>
             <p class="lead" style="text-align: center;">This is a modified jumbotron that occupies the entire horizontal
@@ -629,7 +671,7 @@
                 </form>
             </td>
 
-            
+
 
         </tr>
         <td>
